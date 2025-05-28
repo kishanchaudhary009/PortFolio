@@ -1,0 +1,73 @@
+.parentdiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profilephoto {
+    width: 60%;
+    height: 30%;
+    background-color: hsl(0, 0%, 7%);
+    padding: 13px;
+    border: 2px rgb(124, 124, 124) solid;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-top: 5%;
+
+}
+
+.profilephoto:hover {
+    padding: 10px;
+}
+
+.smallnamecardsparent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 7px;
+}
+
+.smallnamecards {
+    background-color: rgb(124, 124, 124);
+    border-radius: 5px;
+    color: white;
+    margin-top: 2%;
+
+    padding: 5px;
+}
+
+.smallnamecards:hover {
+    transform: scale(1.1);
+}
+
+.personalcontact {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+
+}
+
+.cardicons {
+    width: 6%;
+    height: 50%;
+
+    margin-left: 10%;
+
+}
+
+.personalcontactsingle {
+    display: flex;
+    height: 20%;
+    flex-direction: row;
+}
+
+.contacttext {
+    color: white;
+    margin-left: 10px;
+    width: 70%;
+    text-decoration: none;
+}

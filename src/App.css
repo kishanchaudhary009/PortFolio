@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 7%);
+
+}
+
+.main-container {
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 7%);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.leftcontainer {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  height: 80%;
+  background-color: hsl(240, 2%, 12%);
+  border: 0.5px solid rgb(124, 124, 124);
+  border-radius: 10px;
+}
+
+.rightcontainer {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 60%;
+
+  background-color: hsl(240, 2%, 12%);
+  border: 0.5px solid rgb(124, 124, 124);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.tabs {
+  width: 70%;
+  height: 100%;
+  background-color: hsl(0, 0%, 7%);
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.tabsheading {
+  all: unset;
+  /* resets all default button styles */
+  color: white;
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+  /* optional: makes it look clickable */
+}
