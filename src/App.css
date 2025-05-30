@@ -15,40 +15,47 @@ body,
 }
 
 .main-container {
-  height: 100vh;
+
   width: 100%;
   background-color: hsl(0, 0%, 7%);
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: row;
+  padding-bottom: 30px;
+
 }
 
 .leftcontainer {
-  margin-left: 10%;
+
+  margin-left: 5%;
   margin-top: 3%;
-  width: 20%;
-  height: 80%;
+  width: 21%;
+  height: 80vh;
   background-color: hsl(240, 2%, 12%);
   border: 0.5px solid rgb(124, 124, 124);
   border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);
+
 }
 
 .rightcontainer {
   margin-left: 3%;
   margin-top: 3%;
-  width: 60%;
-
+  width: 100%;
   background-color: hsl(240, 2%, 12%);
   border: 0.5px solid rgb(124, 124, 124);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);
 
 }
 
+
+
 .tabs {
-  width: 70%;
+  width: 80%;
   height: 100%;
   background-color: hsl(0, 0%, 7%);
   border-top-right-radius: 10px;
@@ -57,14 +64,42 @@ body,
   flex-direction: row;
   justify-content: space-between;
   padding: 20px;
+
 }
 
 .tabsheading {
   all: unset;
-  /* resets all default button styles */
+
   color: white;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   cursor: pointer;
-  /* optional: makes it look clickable */
+
+}
+
+
+.flip-card-inner {
+  width: 70%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s ease-in-out;
+
+}
+
+.flipped {
+  transform: rotate3d(0, 1, 0.01, -180deg);
+
+  /*transform: rotateY(180deg);*/
+}
+
+.flip-card-front {
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: hsl(240, 2%, 12%);
+  border: 0.5px solid rgb(124, 124, 124);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);
+  padding: 20px;
+  height: 100%;
+
 }
