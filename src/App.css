@@ -28,7 +28,7 @@ body,
 
 .leftcontainer {
 
-  margin-left: 5%;
+  margin-left: 1%;
   margin-top: 3%;
   width: 21%;
   height: 80vh;
@@ -40,15 +40,15 @@ body,
 }
 
 .rightcontainer {
-  margin-left: 3%;
-  margin-top: 3%;
+
+  margin: 3%;
   width: 100%;
   background-color: hsl(240, 2%, 12%);
-  border: 0.5px solid rgb(124, 124, 124);
-  border-radius: 10px;
+  /*border: 0.5px solid rgb(124, 124, 124);
+  border-radius: 10px;*/
   display: flex;
   flex-direction: column;
-  box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);
+  /*box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);*/
 
 }
 
@@ -58,8 +58,8 @@ body,
   width: 80%;
   height: 100%;
   background-color: hsl(0, 0%, 7%);
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  /*border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;*/
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,12 +79,14 @@ body,
 
 
 .flip-card-inner {
-  width: 70%;
+  width: 100%;
   height: 100%;
   transform-style: preserve-3d;
   transition: transform 0.7s ease-in-out;
 
 }
+
+
 
 .flipped {
   transform: rotate3d(0, 1, 0.01, -180deg);
@@ -96,9 +98,9 @@ body,
   position: absolute;
   backface-visibility: hidden;
   background-color: hsl(240, 2%, 12%);
-  border: 0.5px solid rgb(124, 124, 124);
+  /*border: 0.5px solid rgb(124, 124, 124);
   border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);
+  box-shadow: 0 10px 30px rgba(240, 240, 240, 0.3);*/
   padding: 20px;
   height: 100%;
 

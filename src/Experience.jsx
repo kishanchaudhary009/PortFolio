@@ -62,11 +62,11 @@ function Experience() {
                     <div key={index} className={styles.card}>
                         <img src={exp.logo} className={styles.logo} alt="Company Logo" />
                         <div className={styles.details}>
-                            <h3>{exp.title}</h3>
-                            <p><strong>{exp.company}</strong></p>
-                            <p>{exp.duration}</p>
-                            <p>{exp.location}</p>
-                            <p>{exp.description}</p>
+                            <h3 style={{ color: 'white' }}>{exp.title}</h3>
+                            <p style={{ color: 'white' }}><strong>{exp.company}</strong></p>
+                            <p style={{ color: 'white' }}>{exp.duration}</p>
+                            <p style={{ color: 'white' }}>{exp.location}</p>
+                            <p style={{ color: 'white' }}>{exp.description}</p>
                             <button onClick={() => openModal(exp.image)}>View Project Screenshots</button>
                         </div>
                     </div>
