@@ -51,7 +51,7 @@ function Experience() {
                 </>
             ),
             logo: "src/assets/mobishaalalogo.png",
-            image: "src/assets/eduplusprojectcard.png", // Add this image in your assets folder if you have it
+            image: "src/assets/mobishaalaprojectcard.png", // Add this image in your assets folder if you have it
         },
     ];
 
@@ -67,7 +67,7 @@ function Experience() {
                             <p>{exp.duration}</p>
                             <p>{exp.location}</p>
                             <p>{exp.description}</p>
-                            <button onClick={() => openModal(exp.image)}>View Project</button>
+                            <button onClick={() => openModal(exp.image)}>View Project Screenshots</button>
                         </div>
                     </div>
                 ))}

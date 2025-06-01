@@ -1,118 +1,103 @@
-import React, { useState } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 
 const certifications = [
-    {
-        title: "Android Internship",
-        pdf: "src/assets/Mobishaala Certificate.pdf",
-    }, {
-        title: "AI Developer Internship",
-        pdf: "src/assets/Eduplus Ai Intern (1).pdf",
-    },
-    {
-        title: "Android Development (Udemy)",
-        pdf: "src/assets/Android Udemy.pdf",
-    },
-    {
-        title: "Python (Coursera)",
-        pdf: "src/assets/Python Coursera.pdf",
-    },
-    {
-        title: "iOS App Development with Swift (Coursera)",
-        pdf: "src/assets/Swift Coursera (1).pdf",
-    },
-    {
-        title: "Flask (Coursera)",
-        pdf: "src/assets/Flask Coursera.pdf",
-    },
+    { title: "Android Internship", image: "src/assets/Mobishaala Certificate_page-0001.jpg" },
+    { title: "AI Developer Internship", image: "src/assets/Eduplus Ai Intern (1)_page-0001.jpg" },
+    { title: "Android Development (Udemy)", image: "src/assets/Android Udemy_page-0001.jpg" },
+    { title: "Python (Coursera)", image: "src/assets/Python Coursera_page-0001.jpg" },
+    { title: "iOS App Development with Swift (Coursera)", image: "src/assets/Swift Coursera (1)_page-0001.jpg" },
+    { title: "Flask (Coursera)", image: "src/assets/Flask Coursera_page-0001.jpg" },
+];
+const publications = [
+    { title: "SmartGrade - IEEE", image: "src/assets/Smartgrade Ieee.png" },
+    { title: "SaralMarathi - IEEE", image: "src/assets/SaralMarathi Ieee.png" },
+    { title: "Open Autonomous Dashboard - IJISAE", image: "src/assets/Drivesync ijius.png" }
 ];
 
 function Certifications() {
-    const [selectedPdf, setSelectedPdf] = useState(null);
-
     return (
-        <div style={{ padding: "40px 10%", fontFamily: "sans-serif" }}>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "20px", justifyContent: "space-between" }}>
+        <div style={{ padding: "40px 10%", fontFamily: "sans-serif", backgroundColor: "hsl(240, 2%, 12%)" }}>
+            <h2 style={{ width: '100%', height: '10%', textAlign: 'center', color: 'white', marginInline: 'auto', fontFamily: 'monospace' }}> Course Certifications</h2>
+
+            <div
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                    gap: "24px",
+                    backgroundColor: "hsl(240, 2%, 12%)",
+                }}
+            >
                 {certifications.map((cert, index) => (
-                    <div
+                    <motion.div
                         key={index}
-                        onClick={() => setSelectedPdf(cert.pdf)}
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: index * 0.1 }}
                         style={{
-                            width: "260px",
-                            backgroundColor: "#f9f9f9",
-                            borderRadius: "10px",
-                            boxShadow: "0 2px 8px rgba(0, 0, 0, 0.1)",
-                            padding: "10px",
-                            cursor: "pointer",
+                            backgroundColor: "hsl(240, 2%, 12%)",
+                            borderRadius: "12px",
+                            boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
+                            padding: "12px",
+                            overflow: "hidden",
                             textAlign: "center",
                         }}
                     >
-                        <h4 style={{ margin: "10px 0" }}>{cert.title}</h4>
-                        <iframe
-                            src={cert.pdf}
-                            title={cert.title}
+                        <h4 style={{ marginBottom: "10px", color: "white" }}>{cert.title}</h4>
+                        <img
+                            src={cert.image}
+                            alt={cert.title}
                             style={{
                                 width: "100%",
-                                height: "200px",
-                                border: "1px solid #ccc",
-                                borderRadius: "6px",
+                                height: "auto",
+                                borderRadius: "8px",
+                                objectFit: "contain",
                             }}
                         />
-                    </div>
+                    </motion.div>
                 ))}
             </div>
 
-            {/* Modal */}
-            {selectedPdf && (
-                <div
-                    onClick={() => setSelectedPdf(null)}
-                    style={{
-                        position: "fixed",
-                        top: 0, left: 0,
-                        width: "100vw",
-                        height: "100vh",
-                        backgroundColor: "rgba(0, 0, 0, 0.7)",
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                        zIndex: 1000,
-                    }}
-                >
-                    <div
-                        onClick={(e) => e.stopPropagation()}
+            <h2 style={{ width: '100%', height: '10%', textAlign: 'center', color: 'white', marginInline: 'auto', fontFamily: 'monospace' }}>Research Publications</h2>
+            <div
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+                    gap: "24px",
+                    backgroundColor: "hsl(240, 2%, 12%)",
+                }}
+            >
+                {publications.map((cert, index) => (
+                    <motion.div
+                        key={index}
+                        initial={{ opacity: 0, y: 40 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6, delay: index * 0.1 }}
                         style={{
-                            width: "80%",
-                            height: "90%",
-                            backgroundColor: "#fff",
-                            borderRadius: "10px",
+                            backgroundColor: "hsl(240, 2%, 12%)",
+                            borderRadius: "12px",
+                            boxShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
+                            padding: "12px",
                             overflow: "hidden",
-                            boxShadow: "0 0 15px rgba(0,0,0,0.3)",
-                            position: "relative",
+                            textAlign: "center",
                         }}
                     >
-                        <iframe
-                            src={selectedPdf}
-                            title="Full Certificate"
-                            style={{ width: "100%", height: "100%", border: "none" }}
-                        />
-                        <button
-                            onClick={() => setSelectedPdf(null)}
+                        <   h4 style={{ marginBottom: "10px", color: "white" }}>{cert.title}</h4>
+                        <img
+                            src={cert.image}
+                            alt={cert.title}
                             style={{
-                                position: "absolute",
-                                top: 10,
-                                right: 15,
-                                background: "#ff5c5c",
-                                color: "#fff",
-                                border: "none",
-                                borderRadius: "5px",
-                                padding: "5px 10px",
-                                cursor: "pointer",
+                                width: "100%",
+                                height: "auto",
+                                borderRadius: "8px",
+                                objectFit: "contain",
                             }}
-                        >
-                            Close
-                        </button>
-                    </div>
-                </div>
-            )}
+                        />
+                    </motion.div>
+                ))}
+            </div>
         </div>
     );
 }

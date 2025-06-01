@@ -46,6 +46,7 @@ import Aboutme from './AboutMe';
 import Experience from './Experience';
 import Resume from './Resume';
 import Certifications from './Certifications';
+import Project from './Project';
 
 function App() {
   const [currtab, setcurrtab] = useState("About Me");
@@ -85,6 +86,7 @@ function App() {
               {currtab === "Experience" && <Experience></Experience>}
               {currtab === "Resume" && <Resume></Resume>}
               {currtab === "Certifications" && <Certifications></Certifications>}
+              {currtab === "Projects" && <Project></Project>}
             </div>
           </div>
 
