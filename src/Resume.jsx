@@ -3,13 +3,12 @@ import React from "react";
 function Resume() {
     return (
         <>
-            {/* Optional: Global scrollbar removal just in case */}
             <style>
                 {`
-          embed::-webkit-scrollbar {
-            display: none;
-          }
-        `}
+                    embed::-webkit-scrollbar {
+                        display: none;
+                    }
+                `}
             </style>
 
             <div
@@ -19,19 +18,19 @@ function Resume() {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
-                    gap: "2rem",
                     paddingBottom: "2rem",
                 }}
             >
-                {/* PDF embed (responsive width, height auto) */}
+
+                {/* PDF embed with fixed height */}
                 <embed
                     src="/Kishan_Resume_Updated.pdf#toolbar=0&navpanes=0"
                     type="application/pdf"
                     style={{
-                        width: "100%",
-                        height: "auto",
-                        aspectRatio: "8.5 / 11", // Approx A4 size
+                        width: "90%",
+                        height: "140vh", // fill most of the screen height
                         border: "none",
+                        marginBottom: "1rem", // reduce gap here
                     }}
                 />
 
