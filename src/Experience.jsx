@@ -58,6 +58,9 @@ function Experience() {
     return (
         <>
             <div className={styles.experienceContainer}>
+                <h1 style={{ textAlign: "center", marginBottom: "30px", color: 'white', fontSize: '25px' }}>
+                    Experience
+                </h1>
                 {internships.map((exp, index) => (
                     <div key={index} className={styles.card}>
                         <img src={exp.logo} className={styles.logo} alt="Company Logo" />

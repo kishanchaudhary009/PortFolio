@@ -19,15 +19,17 @@ function Project() {
             ]
         },
         {
-            title: "AI Powered LMS",
-            description: "• Developed an LMS with context-aware assignment assessments using Retrieval-Augmented Generation (RAG), AI-driven feedback, voice-cloned viva, and mentor-mentee connections. Added 3D Virtual Classroom with real-time student tracking, screen sharing, and audio conferencing",
+            title: "Open Autonomous DashBoard",
+            description: "• Developed a unified monitoring dashboard for smart infrastructure with real-time map visualization and route optimization using Spring Boot and Leaflet.js",
             images: [
-                "src/assets/lms/architecture.png",
-                "src/assets/lms/flowchart.png",
-                "src/assets/lms/vrclassroom.png",
-                "src/assets/lms/architecture.png",
-                "src/assets/lms/flowchart.png",
-                "src/assets/lms/vrclassroom.png",
+                "src/assets/drivesync/login.png",
+                "src/assets/drivesync/dustbin1.png",
+                "src/assets/drivesync/dustbinmap.png",
+                "src/assets/drivesync/traffic1.png",
+                "src/assets/drivesync/traffic2.png",
+                "src/assets/drivesync/streetlight1.png",
+                "src/assets/drivesync/streetlight2.png",
+
             ]
         }
 
@@ -83,7 +85,6 @@ function Project() {
                             marginBottom: '1.5rem',
                             lineHeight: "1.6",
                             fontSize: "1rem",
-                            maxWidth: "800px",
                             padding: "0 1rem"
                         }}>
                             {project.description}

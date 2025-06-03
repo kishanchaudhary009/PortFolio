@@ -65,6 +65,7 @@ import Experience from "./Experience";
 import Resume from "./Resume";
 import Certifications from "./Certifications";
 import Project from "./Project";
+import Acheivements from "./Acheivements";
 // (add this if/when you create it)
 // import Achievements from "./Achievements";
 
@@ -76,7 +77,7 @@ export default function App() {
     Projects: useRef(null),
     Experience: useRef(null),
     Certifications: useRef(null),
-    Achievements: useRef(null),
+    Hackathons: useRef(null),
   };
 
   // 2 - scroll smoothly to the selected section
@@ -105,9 +106,7 @@ export default function App() {
           <AboutMe />
         </section>
 
-        <section ref={sectionRefs.Resume}>
-          <Resume />
-        </section>
+
 
         <section ref={sectionRefs.Projects}>
           <Project />
@@ -121,9 +120,12 @@ export default function App() {
           <Certifications />
         </section>
 
-        {/* <section ref={sectionRefs.Achievements}>
-          <Achievements />
-        </section> */}
+        {<section ref={sectionRefs.Hackathons}>
+          <Acheivements />
+        </section>}
+        <section ref={sectionRefs.Resume}>
+          <Resume />
+        </section>
       </div>
     </div>
   );
