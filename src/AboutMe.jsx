@@ -40,7 +40,7 @@
 
 //                 <div className={styles.imageOverlay} />
 //                 <img
-//                     src="src/assets/techstack.png"
+//                     src="/assets/techstack.png"
 //                     alt="Technology Stack"
 //                     className={styles.techImage}
 //                 />

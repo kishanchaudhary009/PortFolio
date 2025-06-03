@@ -6,23 +6,23 @@ function Achievements() {
             title: "SPIT HackXplore",
             position: "Runner UP",
             images: [
-                "src/assets/hackxplore/hackxplorecerti.png",
-                "src/assets/hackxplore/hackxplorewinner.png"
+                "/assets/hackxplore/hackxplorecerti.png",
+                "/assets/hackxplore/hackxplorewinner.png"
             ]
         },
         {
             title: "Quasar 3.0",
             position: "Track Winner",
             images: [
-                "src/assets/quasar/quasarcerti1.png",
-                "src/assets/quasar/quasarwinner.png",
-                "src/assets/quasar/quasarcerti2.png"
+                "/assets/quasar/quasarcerti1.png",
+                "/assets/quasar/quasarwinner.png",
+                "/assets/quasar/quasarcerti2.png"
             ]
         },
         {
             title: "Amazon ML Challenge 2024",
             position: "Team Rank 417 out of 73000 participants",
-            images: ["src/assets/amazonml/amazonprofilephoto.png"]
+            images: ["/assets/amazonml/amazonprofilephoto.png"]
         }
     ];
 

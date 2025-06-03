@@ -30,8 +30,8 @@ function Experience() {
                     <b>Note:</b> No GitHub repo due to private project.
                 </>
             ),
-            logo: "src/assets/eduplus_logo.png",
-            image: "src/assets/eduplusprojectcard.png",
+            logo: "/assets/eduplus_logo.png",
+            image: "/assets/eduplusprojectcard.png",
         },
         {
             title: "Software Developer Intern",
@@ -50,8 +50,8 @@ function Experience() {
                     <b>Note:</b> No GitHub repo due to private project.
                 </>
             ),
-            logo: "src/assets/mobishaalalogo.png",
-            image: "src/assets/mobishaalaprojectcard.png", // Add this image in your assets folder if you have it
+            logo: "/assets/mobishaalalogo.png",
+            image: "/assets/mobishaalaprojectcard.png", // Add this image in your assets folder if you have it
         },
     ];
 

@@ -2,17 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const certifications = [
-    { title: "Android Internship", image: "src/assets/Mobishaala Certificate_page-0001.jpg" },
-    { title: "AI Developer Internship", image: "src/assets/Eduplus Ai Intern (1)_page-0001.jpg" },
-    { title: "Android Development (Udemy)", image: "src/assets/Android Udemy_page-0001.jpg" },
-    { title: "Python (Coursera)", image: "src/assets/Python Coursera_page-0001.jpg" },
-    { title: "iOS App Development with Swift (Coursera)", image: "src/assets/Swift Coursera (1)_page-0001.jpg" },
-    { title: "Flask (Coursera)", image: "src/assets/Flask Coursera_page-0001.jpg" },
+    { title: "Android Internship", image: "/assets/Mobishaala Certificate_page-0001.jpg" },
+    { title: "AI Developer Internship", image: "/assets/Eduplus Ai Intern (1)_page-0001.jpg" },
+    { title: "Android Development (Udemy)", image: "/assets/Android Udemy_page-0001.jpg" },
+    { title: "Python (Coursera)", image: "/assets/Python Coursera_page-0001.jpg" },
+    { title: "iOS App Development with Swift (Coursera)", image: "/assets/Swift Coursera (1)_page-0001.jpg" },
+    { title: "Flask (Coursera)", image: "/assets/Flask Coursera_page-0001.jpg" },
 ];
 const publications = [
-    { title: "SmartGrade - IEEE", image: "src/assets/Smartgrade Ieee.png" },
-    { title: "SaralMarathi - IEEE", image: "src/assets/SaralMarathi Ieee.png" },
-    { title: "Open Autonomous Dashboard - IJISAE", image: "src/assets/Drivesync ijius.png" }
+    { title: "SmartGrade - IEEE", image: "/assets/Smartgrade Ieee.png" },
+    { title: "SaralMarathi - IEEE", image: "/assets/SaralMarathi Ieee.png" },
+    { title: "Open Autonomous Dashboard - IJISAE", image: "/assets/Drivesync ijius.png" }
 ];
 
 function Certifications() {

@@ -10,25 +10,25 @@ function Project() {
             title: "AI Powered LMS",
             description: "• Developed an LMS with context-aware assignment assessments using Retrieval-Augmented Generation (RAG), AI-driven feedback, voice-cloned viva, and mentor-mentee connections. Added 3D Virtual Classroom with real-time student tracking, screen sharing, and audio conferencing",
             images: [
-                "src/assets/lms/architecture.png",
-                "src/assets/lms/flowchart.png",
-                "src/assets/lms/vrclassroom.png",
-                "src/assets/lms/architecture.png",
-                "src/assets/lms/flowchart.png",
-                "src/assets/lms/vrclassroom.png",
+                "/assets/lms/architecture.png",
+                "/assets/lms/flowchart.png",
+                "/assets/lms/vrclassroom.png",
+                "/assets/lms/architecture.png",
+                "/assets/lms/flowchart.png",
+                "/assets/lms/vrclassroom.png",
             ]
         },
         {
             title: "Open Autonomous DashBoard",
             description: "• Developed a unified monitoring dashboard for smart infrastructure with real-time map visualization and route optimization using Spring Boot and Leaflet.js",
             images: [
-                "src/assets/drivesync/login.png",
-                "src/assets/drivesync/dustbin1.png",
-                "src/assets/drivesync/dustbinmap.png",
-                "src/assets/drivesync/traffic1.png",
-                "src/assets/drivesync/traffic2.png",
-                "src/assets/drivesync/streetlight1.png",
-                "src/assets/drivesync/streetlight2.png",
+                "/assets/drivesync/login.png",
+                "/assets/drivesync/dustbin1.png",
+                "/assets/drivesync/dustbinmap.png",
+                "/assets/drivesync/traffic1.png",
+                "/assets/drivesync/traffic2.png",
+                "/assets/drivesync/streetlight1.png",
+                "/assets/drivesync/streetlight2.png",
 
             ]
         }
