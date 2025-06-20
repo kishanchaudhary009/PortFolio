@@ -183,7 +183,7 @@ import "swiper/css/autoplay";
 function Project() {
     const projects = [
         {
-            title: "AI Powered LMS",
+            title: "AI Powered LMS  (MERN + Flask + ChromaDB(RAG))",
             description:
                 "• Developed an LMS with context-aware assignment assessments using Retrieval-Augmented Generation (RAG), AI-driven feedback, voice-cloned viva, and mentor-mentee connections. Added 3D Virtual Classroom with real-time student tracking, screen sharing, and audio conferencing",
             images: [
@@ -196,7 +196,7 @@ function Project() {
             ]
         },
         {
-            title: "Open Autonomous DashBoard",
+            title: "Open Autonomous DashBoard  (SpringBoot + JPA + HTML + CSS)",
             description:
                 "• Developed a unified monitoring dashboard for smart infrastructure with real-time map visualization and route optimization using Spring Boot and Leaflet.js",
             images: [
@@ -210,7 +210,7 @@ function Project() {
             ]
         },
         {
-            title: "KitabAI",
+            title: "KitabAI  (Android + Kotlin + Java + XML)",
             description:
                 "• Developed a Android Application of Online book marketplace with Audio/Chat book conversation and integrated payment gateway using Cashfree Payments.",
             images: [
@@ -220,6 +220,21 @@ function Project() {
                 "/assets/kitabai/4.png",
                 "/assets/kitabai/5.png",
                 "/assets/kitabai/6.png"
+            ]
+        },
+        {
+            title: "WealthWise  (Android + Kotlin + XML + ExpressJS + MongoDB Atlas + Render)",
+            description:
+                "• Developed a Android Application for wealth management having features like portfolio management, expense tracker, stock holding monitoring, AI news recommendation based on portfolio and sip calculator. \n• The backend for the application made with ExpressJS and MongoDB atlas is deployed on render, the application is connected to backend using OKHttp. ",
+            images: [
+                "/assets/fintech/1.jpg",
+                "/assets/fintech/2.jpg",
+                "/assets/fintech/3.jpg",
+                "/assets/fintech/4.jpg",
+                "/assets/fintech/5.jpg",
+                "/assets/fintech/6.jpg",
+                "/assets/fintech/7.jpg",
+                "/assets/fintech/8.jpg"
             ]
         }
     ];
@@ -321,7 +336,7 @@ function Project() {
                                 }}
                             >
                                 {project.images.map((image, idx) => {
-                                    const isPortrait = image.toLowerCase().includes("kitabai");
+                                    const isPortrait = image.toLowerCase().includes("kitabai") || image.toLowerCase().includes("fintech");
 
                                     return (
                                         <SwiperSlide
