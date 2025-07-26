@@ -27,7 +27,7 @@ function Achievements() {
     ];
 
     return (
-        <section style={{ width: "100%", padding: "20px", fontFamily: "Arial, sans-serif" }}>
+        <section style={{ width: "100%", paddingTop: "20px", fontFamily: "Arial, sans-serif" }}>
             <h1 style={{ textAlign: "center", marginBottom: "30px", color: 'white', fontSize: '25px' }}>
                 Hackathons
             </h1>
@@ -36,7 +36,7 @@ function Achievements() {
                     key={index}
                     style={{
                         marginBottom: "40px",
-                        padding: "20px",
+                        padding: "10px",
                         marginInline: '15%',
                         border: "1px solid #ddd",
                         borderRadius: "8px",

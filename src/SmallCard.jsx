@@ -62,7 +62,7 @@ function Smallcard() {
 
     return (
         <div className={styles.parentdiv}>
-            <div style={{ display: 'flex', flexDirection: 'column', width: '50%', height: '50%' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '50%' }}>
                 <h2 style={{ color: "white", marginInline: 'auto', marginTop: '10px' }}>Kishan Chaudhary</h2>
                 <img
                     src="/assets/kishanprofilephoto.jpg"

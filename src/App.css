@@ -55,7 +55,7 @@ body,
 
 
 .tabs {
-  width: 90%;
+  width: 95%;
   height: 100%;
   background-color: hsl(0, 0%, 7%);
   /*border-top-right-radius: 10px;
@@ -65,7 +65,8 @@ body,
   justify-content: space-between;
   padding: 20px;
   margin-inline: auto;
-
+  flex-wrap: wrap;
+  gap: 3px;
 }
 
 .tabsheading {
